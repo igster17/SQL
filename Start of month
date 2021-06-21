@@ -1,0 +1,5 @@
+SELECT
+-- REPLACE/CHANGE GETDATE() with date table equivalent
+
+DATEFROMPARTS(YEAR(GETDATE()),MONTH(GETDATE()),1) AS somonth,
+EOMONTH(GETDATE()) AS eomonth_date
